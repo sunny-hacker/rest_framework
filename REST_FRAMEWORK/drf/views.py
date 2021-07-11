@@ -24,6 +24,7 @@ def snippet_list(request):
         return JsonResponse(serializer.errors, status=400)
 
 
+
 @csrf_exempt
 def snippet_detail(request, pk):
     """
